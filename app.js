@@ -40,8 +40,8 @@ function onReady() {
       //empty the input
       newToDoText.value = '';
 
-      button.addEventListener('click', toDoList.removeChild(toDoList.li)
-    );
+      button.addEventListener('click', function() {toDoList.removeChild(newLi)
+    });
  });
 
   }
