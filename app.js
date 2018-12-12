@@ -39,11 +39,12 @@ function onReady() {
 
       //empty the input
       newToDoText.value = '';
+
+      button.addEventListener('click', toDoList.removeChild(toDoList.li)
+    );
  });
 
-      toDoList.addEventListener("click", toDoList.removeChild(toDoList.childNodes[0]));
-
- }
+  }
 
 window.onload = function() {
   alert("The window has loaded!");
