@@ -13,6 +13,12 @@ function onReady() {
       // create a new input
       let checkbox = document.createElement('input');
 
+      //create new button
+      let button = document.createElement('button');
+
+      //create text for button
+      let buttonText = document.createTextNode('Delete');
+
       // set the input's type to checkbox
       checkbox.type = "checkbox";
 
@@ -22,12 +28,21 @@ function onReady() {
       // attach the checkbox to the li
       newLi.appendChild(checkbox);
 
+      //add text to button
+      button.appendChild(buttonText);
+
+      //attach button to the li
+      newLi.appendChild(button);
+
       // attach the li to the ul
       toDoList.appendChild(newLi);
 
       //empty the input
       newToDoText.value = '';
-  });
+ });
+
+      toDoList.addEventListener("click", toDoList.removeChild(toDoList.childNodes[0]));
+
  }
 
 window.onload = function() {
