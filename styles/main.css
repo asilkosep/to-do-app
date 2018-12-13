@@ -13,4 +13,5 @@ form {
 ul {
   justify-content: center;
   text-align: center;
+  list-style: none;
 }
