@@ -10,3 +10,5 @@ I was tasked with adding components like a delete button, with the functionality
 MDL was used to structure the appearance of the app.
 
 Please see image of the app, below:
+
+![To-Do App](bloc_todoapp.png)
